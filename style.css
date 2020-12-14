@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Alegreya Sans', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+.container{
+    max-width: 1500px;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    max-width: inherit;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: 2;
+}
+
+.header-left{
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.header-middle ul{
+    display: flex;
+    list-style-type: disc;
+    list-style-position:inside;
+}
+.header-middle ul li{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+ul::marker{
+    margin-right: 5px;
+}
+
+.header-right{
+    height: 100%;
+}
+
+.header-right nav, .header-right nav ul{
+    height: 100%;
+}
+
+.header-right nav ul{
+    display: flex;
+}
+
+.header-right nav ul li{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header-right nav ul li:hover, .active{
+    transition: all .2s linear;
+    border-bottom: 3px solid #000;
+    cursor: pointer;
+}
+
+.header-left .red-txt{
+    font-weight: 700;
+}
+
+main{
+    margin-top: 60px;
+    position: relative;
+    z-index: 1;
+}
+
+.section{
+    width: 100%;
+    height: 650px;
+    background-color: #000;
+}
+
+.main-block{
+    background-image: url("images/1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.reservation{
+    background-image: url("images/2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.info{
+    background-color: #eee;
+}
+
+.section-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 100px;
+    backdrop-filter: blur(0px) brightness(20%);
+    transition: all .2s linear;
+}
+
+.content-title-block{
+    width: 45%;
+    text-align: left;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.title-center{
+    width: 100%;
+    text-align: center;
+}
+
+.content-text-block{
+    width: 50%;
+}
+
+p{
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.red-txt{
+    font-size: inherit;
+    color: #ff0000;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.content-grid-section{
+    display: grid;
+    width: 100%;
+    height: 80%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 100%);
+    gap: 1px;
+    margin-top: 15px;
+}
+
+.grid-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    padding: 30px 10px 30px 10px;
+    border-right: 1px solid #ccc;
+}
+
+.grid-block:last-child{
+    border: 0;
+}
+
+.grd-bl-title{
+    font-size: 25px;
+    font-weight: 700;
+}
+.grd-bl-text{
+    text-align: center;
+    font-weight: 400;
+    margin-top: 10px;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.reservation-btn{
+    background-color: #0f0f0f;
+    height: 40px;
+    width: 60%;
+    border: 0;
+}
+
+.reservation-btn:hover{
+    transition: .3s linear;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.reservation-btn a{
+    color: #fff;
+    font-size: 16px;
+}
+
+.reservation-btn:hover a{
+    transition: .1s linear;
+    font-size: 18px;
+}
+
+.reservation{
+    height: 950px;
+}
+
+.reservation .section-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 45px;
+}
+
+.content-form-block{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 15px 25px 15px;
+}
+.form-title{
+    font-size: 45px;
+    color: #000;
+}
+
+.subtitle{
+    font-size: 25px;
+    font-weight: 300;
+    
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    width: 85%;
+}
+
+.input-field{
+    height: 40px;
+    border: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+input[type="submit"]{
+    margin: auto;
+    width: 60%;
+    height: 50px;
+    margin-top: 30px;
+    color: #fff;
+    background-color: #0f0f0f;
+    border: 0;
+    font-size: 18px;
+}
+
+input[type="submit"]:hover{
+    transition: .3s linear;
+    cursor: pointer;
+    background-color: #000;
+}
+
+.registration-form{
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.login{
+    text-align: center;
+}
+
+.login:hover{
+    font-size: 19px;
+    font-weight: 500;
+    transition: .1s linear;
+    cursor: pointer;
+}
+
+label{
+    font-size: 18px;
+    color: #000;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.footer-block-title{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.logo{
+    text-align: right;
+    font-size: 35px;
+}
+
+.social{
+    display: flex;
+    justify-content: flex-end;
+}
+
+svg{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    transition: .1s linear;
+}
+
+.instagram:hover{
+    fill: url(#instagram-gradient);
+    cursor: pointer;
+}
+
+.telegram:hover{
+    fill: #0088cc;
+    cursor: pointer;
+}
+
+.facebook:hover{
+    fill: #3b5998;
+    cursor: pointer;
+}

@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Alegreya Sans', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../images/4.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container{
+    max-width: 1500px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    backdrop-filter: brightness(40%) blur(1px);
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    max-width: inherit;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    padding-left: 50px;
+    padding-right: 25px;
+    z-index: 2;
+}
+
+.header-left{
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.header-left .red-txt{
+    font-weight: 700;
+}
+
+.red-txt{
+    font-size: inherit;
+    color: #ff0000;
+}
+
+.header-right{
+    display: flex;
+    height: inherit;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.user{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 200px;
+    height: inherit;
+    margin-right: 50px;
+}
+
+.user:hover{
+    cursor: pointer;
+}
+
+
+.user-img{
+    width: 35px;
+    height: 35px;
+    fill: #000;
+}
+
+.user-name{
+    color: #000;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.logout{
+    width: 22px;
+    height: 22px;
+}
+
+.logout:hover{
+    transition: .1s linear;
+    fill: #404040;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    position: relative;
+    height: 100vh;
+    padding-top: 60px;
+}
+
+.aside{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: rgba(255, 255, 255); 
+    
+    border-top: 1px solid #ccc;
+}
+
+.info-as{
+    border-bottom: 1px solid #ccc;
+    padding: 25px 25px 25px 50px;
+}
+
+.aside-text{
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.as-user, .form-title{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.form-title{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.main-block{
+    padding: 25px 25px 25px 50px;
+}
+
+.block-title{
+    font-size: 35px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.add-as{
+    padding: 25px 25px 25px 50px;
+}
+
+.add-as form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+input[type="submit"]{
+    border: 0;
+    height: 40px;
+    background-color: #0f0f0f;
+    color: #fff;
+    margin-top: 15px;
+}
+
+input[type="submit"]:hover{
+    transition: .3s linear;
+    cursor: pointer;
+    background-color: #000;
+}
+
+select{
+    margin-top: 25px;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 5px;
+    border-radius: 0; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.field{
+    padding-left: 10px;
+    padding-right: 5px;
+    border-radius: 0;
+    height: 40px;
+    border: 1px solid #8a8a8a;
+}
+
+.field:hover, select:hover{
+    cursor: pointer;
+}
+
+table{
+    background-color: #fff;
+    border-spacing: 0;
+}
+
+th{
+    border-bottom: 1px solid #000;
+}
+
+td, th{
+    padding: 10px 40px 10px 40px;
+}
+
+.change{
+    background-color: #ac9393;
+}
+
+.delete{
+    background-color: #ff0000;
+}
+
+.main-link{
+    padding-left: 50px;
+    margin-top: 10px;
+    font-size: 20px;
+    text-decoration: underline;
+}

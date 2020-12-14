@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reservations.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <title>Reservations</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="content">
+                <header>
+                    <div class="header-left">
+                        BEST<span class="red-txt">REC</span>ORDS
+                    </div>
+                    <div class="header-right">
+                        <div class="user">
+                            <svg class="user-img" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M437.02,330.98c-27.883-27.882-61.071-48.523-97.281-61.018C378.521,243.251,404,198.548,404,148
+                                        C404,66.393,337.607,0,256,0S108,66.393,108,148c0,50.548,25.479,95.251,64.262,121.962
+                                        c-36.21,12.495-69.398,33.136-97.281,61.018C26.629,379.333,0,443.62,0,512h40c0-119.103,96.897-216,216-216s216,96.897,216,216
+                                        h40C512,443.62,485.371,379.333,437.02,330.98z M256,256c-59.551,0-108-48.448-108-108S196.449,40,256,40
+                                        c59.551,0,108,48.448,108,108S315.551,256,256,256z"/>
+                                </g>
+                            </g>
+                            </svg>
+                            <div class="user-name">gitt22</div>
+                            </div>
+                        <a href="../login/login.html"><svg class="logout" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g id="Solid"><path d="m480.971 239.029-90.51-90.509a24 24 0 0 0 -33.942 0 24 24 0 0 0 0 33.941l49.54 49.539h-262.059a24 24 0 0 0 -24 24 24 24 0 0 0 24 24h262.059l-49.54 49.539a24 24 0 0 0 33.942 33.941l90.51-90.51a24 24 0 0 0 0-33.941z"/><path d="m304 392a24 24 0 0 0 -24 24v24h-208v-368h208v24a24 24 0 0 0 48 0v-32a40 40 0 0 0 -40-40h-224a40 40 0 0 0 -40 40v384a40 40 0 0 0 40 40h224a40 40 0 0 0 40-40v-32a24 24 0 0 0 -24-24z"/></g></svg></a>
+                    </div>
+                </header>
+                <main>
+                    <div class="aside">
+                        <!-- <div class="info-as">
+                            <div class="aside-text as-user">gitt22</div>
+                            <div class="aside-text">Женя Гітт</div>
+                            <div class="aside-text">gitt22konoplyanka@gmail.com</div>
+                        </div> -->
+                        <div class="add-as">
+                            <form action="">
+                                <div class="form-title">Новий запис</div>
+                                <label>Дата:</label>
+                                <input type="date" class="field">
+                                <label>Час:</label>
+                                <input type="time" class="field">
+                                <select name="services">
+                                    <option selected disabled>Оберіть послугу</option>
+                                    <option value="Запис пісні">Запис пісні</option>
+                                    <option value="Аранжування">Аранжування</option>
+                                    <option value="Озвучка">Озвучка</option>
+                                </select>
+                                <input type="submit" value="Додати">
+                            </form>
+                        </div>
+                        <a href="../../index.html" class="main-link">На головну</a>
+                    </div>
+                    <div class="main-block">
+                        <div class="block-title">Записи:</div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Дата</th>
+                                    <th>Час</th>
+                                    <th>Послуга</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>22.12.2020</td>
+                                    <td>18:00</td>
+                                    <td>Запис пісні</td>
+                                    <td class="change"><a href="#">Редагувати</a></td>
+                                    <td class="delete"><a href="#">Видалити</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
